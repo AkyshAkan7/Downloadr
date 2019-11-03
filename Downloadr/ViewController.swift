@@ -27,6 +27,11 @@ class ViewController: UITableViewController {
         fetchData()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationController?.navigationBar.barStyle = .blackTranslucent
+    }
+    
     func setupNavigationBar() {
         navigationController?.navigationBar.barTintColor = UIColor(red: 0.0, green: 0.0, blue: 0.0 , alpha: 1.0)
         navigationController?.navigationBar.topItem?.title = "Downloadr"
